@@ -1,10 +1,8 @@
 include 'x86.inc'
 
-factory_image('x86-generic', 'combined-squashfs', '.img.gz')
-factory_image('x86-generic', 'combined-squashfs', '.vdi')
-factory_image('x86-generic', 'combined-squashfs', '.vmdk')
-sysupgrade_image('x86-generic', 'combined-squashfs', '.img.gz', {
+device('generic', 'generic', {
 	manifest_aliases = {
+		'combined-squashfs',
 		'x86-kvm',
 		'x86-xen_domu',
 	},
