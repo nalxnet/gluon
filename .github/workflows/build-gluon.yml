@@ -73,30 +73,45 @@ jobs:
           name: output
           path: output
 
-  brcm2708-bcm2708:
-    name: brcm2708-bcm2708
+  ath79-nand:
+    name: ath79-nand
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Install Dependencies
         run: bash contrib/actions/install-dependencies.sh
       - name: Build
-        run: bash contrib/actions/run-build.sh brcm2708-bcm2708
+        run: bash contrib/actions/run-build.sh ath79-nand
       - name: Archive build output
         uses: actions/upload-artifact@v1
         with:
           name: output
           path: output
 
-  brcm2708-bcm2709:
-    name: brcm2708-bcm2709
+  bcm27xx-bcm2708:
+    name: bcm27xx-bcm2708
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Install Dependencies
         run: bash contrib/actions/install-dependencies.sh
       - name: Build
-        run: bash contrib/actions/run-build.sh brcm2708-bcm2709
+        run: bash contrib/actions/run-build.sh bcm27xx-bcm2708
+      - name: Archive build output
+        uses: actions/upload-artifact@v1
+        with:
+          name: output
+          path: output
+
+  bcm27xx-bcm2709:
+    name: bcm27xx-bcm2709
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: bash contrib/actions/install-dependencies.sh
+      - name: Build
+        run: bash contrib/actions/run-build.sh bcm27xx-bcm2709
       - name: Archive build output
         uses: actions/upload-artifact@v1
         with:
@@ -328,15 +343,30 @@ jobs:
           name: output
           path: output
 
-  brcm2708-bcm2710:
-    name: brcm2708-bcm2710
+  bcm27xx-bcm2710:
+    name: bcm27xx-bcm2710
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Install Dependencies
         run: bash contrib/actions/install-dependencies.sh
       - name: Build
-        run: bash contrib/actions/run-build.sh brcm2708-bcm2710
+        run: bash contrib/actions/run-build.sh bcm27xx-bcm2710
+      - name: Archive build output
+        uses: actions/upload-artifact@v1
+        with:
+          name: output
+          path: output
+
+  bcm27xx-bcm2711:
+    name: bcm27xx-bcm2711
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: bash contrib/actions/install-dependencies.sh
+      - name: Build
+        run: bash contrib/actions/run-build.sh bcm27xx-bcm2711
       - name: Archive build output
         uses: actions/upload-artifact@v1
         with:
