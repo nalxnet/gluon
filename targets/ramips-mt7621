@@ -10,6 +10,11 @@ device('asus-rt-ac57u', 'asus_rt-ac57u', {
 device('d-link-dir-860l-b1', 'dlink_dir-860l-b1')
 
 
+-- Edimax
+
+device('edimax-ra21s', 'edimax_ra21s')
+
+
 -- Netgear
 
 device('netgear-ex6150', 'netgear_ex6150', {
